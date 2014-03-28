@@ -1,0 +1,244 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#include ""res\\FluoreScore.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""     // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\FluoreScore.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 235, 55
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About FluoreScore"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "FluoreScore ",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "Computation & Molecular Biology Department, USC",IDC_STATIC,40,25,188,8
+    DEFPUSHBUTTON   "OK",IDOK,178,7,50,16,WS_GROUP
+END
+
+IDD_FluoreScore_DIALOG DIALOGEX 0, 0, 473, 308
+STYLE DS_SETFONT | DS_MODALFRAME | DS_3DLOOK | DS_FIXEDSYS | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "FluoreScoreGUI"
+MENU IDR_MENU1
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Stop",IDOK,416,7,50,16
+    CONTROL         "",IDC_THRESH_SLIDER,"msctls_trackbar32",TBS_NOTICKS | WS_TABSTOP,66,36,106,24
+    LTEXT           "Static",IDC_THRESH,173,38,26,11
+    LTEXT           "video",IDC_Opened_File,55,265,404,17
+    LTEXT           "Input File:",IDC_STATIC,7,265,44,12
+    LTEXT           "Output File:",IDC_STATIC,8,284,44,12
+    LTEXT           "output",IDC_Opened_File2,55,284,402,17
+    LTEXT           "Threshold",IDC_STATIC,33,38,32,8
+    CONTROL         137,IDB_BITMAP1,"Static",SS_BITMAP,235,46,147,136
+    CONTROL         "Denoising",IDC_DENOISING_CHECK,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,31,80,42,14
+    CONTROL         "Save data per silh",IDC_SAVESEPARATE4SILH_CHECK,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,30,99,104,9
+    GROUPBOX        "Show ...",IDC_STATIC,27,136,102,86
+    CONTROL         "Input video",IDC_SHOW_INPUTVIDEO_CHECK,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,31,148,53,10
+    CONTROL         "Change mask",IDC_SHOW_CHANGEMASK_CHCK,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,31,161,59,10
+    CONTROL         "Denoised change mask",IDC_SHOW_DENOISEDCHANGEMASK_CHCK,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,31,175,89,10
+    CONTROL         "Processed area",IDC_SHOW_PROCESSEDAREA_CHCK,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,31,187,65,10
+    LTEXT           "",IDC_STATUS,58,246,105,10
+    LTEXT           "Status:",IDC_STATIC,7,246,24,8
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904e4"
+        BEGIN
+            VALUE "CompanyName", "USC Department of Computational and Molecular Biology"
+            VALUE "FileVersion", "1.0b1"
+            VALUE "InternalName", "FluoreScore.exe"
+            VALUE "OriginalFilename", "FluoreScore.exe"
+            VALUE "ProductVersion", "1.0b1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1252
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_FluoreScore_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 466
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 301
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU1 MENU 
+BEGIN
+    POPUP "File"
+    BEGIN
+        MENUITEM "Open ...",                    ID_FILE_OPEN
+        MENUITEM "Record Video ...",            ID_RECORD_VIDEO, INACTIVE
+        MENUITEM "Exit",                        ID_FILE_EXIT
+    END
+    POPUP "Analyze"
+    BEGIN
+        MENUITEM "Analyze ...",                 ID_ANALYZE_ANALYZE
+        MENUITEM "Custom ROI...",               ID_ANALYZE_REGIONOFINTEREST
+        MENUITEM "Masking ...",                 ID_ANALYZE_MASKING
+    END
+    POPUP "Help"
+    BEGIN
+        MENUITEM "About ...",                   ID_HELP_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BITMAP1             BITMAP                  "FruitFly2.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_ABOUTBOX            "&About FluoreScore..."
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#include "res\FluoreScore.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"     // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
